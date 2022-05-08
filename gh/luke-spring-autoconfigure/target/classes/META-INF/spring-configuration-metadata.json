@@ -1,0 +1,45 @@
+{
+  "groups": [
+    {
+      "name": "luke",
+      "type": "com.luke.spring.boot.autoconfigure.config.GlobalHistoryProperties",
+      "sourceType": "com.luke.spring.boot.autoconfigure.config.GlobalHistoryProperties"
+    },
+    {
+      "name": "spring.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.luke.spring.boot.autoconfigure.config.DataSourceConfig",
+      "sourceMethod": "dataSource()"
+    },
+    {
+      "name": "spring.datasource.history",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.luke.spring.boot.autoconfigure.config.DataSourceConfig",
+      "sourceMethod": "historyDataSource()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "luke.enabled",
+      "type": "java.lang.Boolean",
+      "description": "whether enable auto configuration",
+      "sourceType": "com.luke.spring.boot.autoconfigure.config.GlobalHistoryProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "luke.scan-packages",
+      "type": "java.lang.String[]",
+      "description": "The scan packages. If empty, will scan all beans.",
+      "sourceType": "com.luke.spring.boot.autoconfigure.config.GlobalHistoryProperties",
+      "defaultValue": []
+    },
+    {
+      "name": "luke.use-default-data-source",
+      "type": "java.lang.Boolean",
+      "description": "Whether use default datasource bean",
+      "sourceType": "com.luke.spring.boot.autoconfigure.config.GlobalHistoryProperties",
+      "defaultValue": true
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.luke.spring.boot.autoconfigure.GlobalHistoryAutoConfiguration
